@@ -2,9 +2,7 @@ const express = require('express');
 const mysql = require('mysql2');
 const app = express();
 
-// 중간고사 프로젝트 - 학생 성적 관리 시스템
-
-// body 데이터 읽기용 설정 (이거 안 쓰면 req.body 안 읽힘)
+// body 데이터 읽기용 설정
 app.use(express.json());
 app.use(express.static('public')); // public 폴더 안에 HTML 파일들 넣을 예정
 
